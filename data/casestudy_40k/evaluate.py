@@ -105,7 +105,7 @@ def readParam(p, q, b, rel, seed, option):
 def evaluate1(p, q, b, rel):
 	fin = open('./candidate' + str(rel))
 	lines = fin.readlines()
-	candidate = [int(i) for i in lines]
+        candidate = {int(i):0 for i in lines}
 #	print candidate
 
 	record = {}
